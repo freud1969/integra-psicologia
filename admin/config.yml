@@ -1,4 +1,3 @@
-
 backend:
   name: github
   repo: freud1969/integra-psicologia
@@ -10,10 +9,11 @@ public_folder: "/imagenes"
 collections:
   - name: "contenido"
     label: "Contenido de la web"
+    format: "json"
     files:
       - label: "Información de Integra Psicología"
         name: "informacion"
-        file: "contenido/informacion.yml"
+        file: "contenido/informacion.json"
         fields:
           - label: "Título principal"
             name: "titulo"
@@ -21,11 +21,17 @@ collections:
           - label: "Presentación"
             name: "presentacion"
             widget: "text"
-          - label: "Precio de la sesión"
+          - label: "Precio de la sesión (€)"
             name: "precio"
             widget: "number"
             value_type: "int"
-          - label: "Fotografía"
+            min: 0
+          - label: "Fotografía profesional"
             name: "foto"
             widget: "image"
             required: false
+          - label: "Enlace de reserva de Google Calendar"
+            name: "calendar"
+            widget: "string"
+            pattern: ['^https://calendar\.app\.google/[A-Za-z0-9_-]+$', 'Introduce un enlace público de calendar.app.google']
+
