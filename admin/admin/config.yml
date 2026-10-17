@@ -1,0 +1,31 @@
+
+backend:
+  name: github
+  repo: freud1969/integra-psicologia
+  branch: main
+
+media_folder: "imagenes"
+public_folder: "/imagenes"
+
+collections:
+  - name: "contenido"
+    label: "Contenido de la web"
+    files:
+      - label: "Información de Integra Psicología"
+        name: "informacion"
+        file: "contenido/informacion.yml"
+        fields:
+          - label: "Título principal"
+            name: "titulo"
+            widget: "string"
+          - label: "Presentación"
+            name: "presentacion"
+            widget: "text"
+          - label: "Precio de la sesión"
+            name: "precio"
+            widget: "number"
+            value_type: "int"
+          - label: "Fotografía"
+            name: "foto"
+            widget: "image"
+            required: false
