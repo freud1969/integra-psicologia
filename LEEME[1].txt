@@ -1,0 +1,25 @@
+INTEGRA PSICOLOGÍA — ACTUALIZACIÓN GOOGLE CALENDAR
+
+La web ya enlaza a tu agenda pública de reservas:
+https://calendar.app.google/PCeXu2rNxRvTg7Nx9
+
+PÁGINAS
+index.html — presentación y botones de reserva
+precios.html — tarifa 50 € / 50 minutos
+reservas.html — página de reserva con acceso al calendario
+informacion-legal.html — plantilla legal pendiente de completar
+styles.css — diseño
+
+PUBLICACIÓN
+1. Extrae el ZIP.
+2. En Netlify, abre TU PROYECTO ACTUAL y entra en Deploys.
+3. Arrastra la CARPETA que contiene index.html, no una carpeta superior ni un proyecto nuevo.
+4. Espera el deploy publicado; comprueba inicio, precios y reservas.
+
+RESERVAS
+Los botones llevan a Google Calendar en otra pestaña. No es necesario incrustar un calendario privado. La disponibilidad, los correos, el enlace Meet y los recordatorios se administran en Google Calendar, no en Netlify. Realiza una reserva de prueba con otra cuenta para verificarlo.
+
+FOTO
+Coloca una foto en la misma carpeta con nombre foto-oscar.jpg y sustituye el marcador fotográfico del archivo index.html por <img src="foto-oscar.jpg" alt="Retrato profesional de Óscar">.
+
+IMPORTANTE: la página de información legal es provisional y debe completarse antes de ofrecer servicios al público. Comprueba privacidad de los eventos y que el calendario no está compartido públicamente.
