@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Sitemap: https://integra-psicologia13.netlify.app/sitemap.xml
